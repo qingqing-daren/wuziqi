@@ -21,6 +21,19 @@ enum GameStage {
     STAGE_END        // 游戏结束
 };
 
+// 游戏阶段枚举（新增定义）
+enum GameStage1 {
+    STAGE1_START,          // 游戏开始阶段
+    STAGE2_BLACK_TURN,     // 黑方回合
+    STAGE3_WHITE_TURN,     // 白方回合
+    STAGE4_EXCHANGE1,       // 交换颜色选择阶段（白方操作）
+    STAGE5_BLACK_WIN,      // 黑方获胜
+    STAGE6_WHITE_WIN,      // 白方获胜
+    STAGE7_DRAW,           // 平局
+    STAGE8_PAUSE           // 游戏暂停（可选扩展）
+};
+
+
 // 胜负结果
 enum GameResult {
     NONE,           // 未分胜负
@@ -31,3 +44,4 @@ enum GameResult {
 };
 
 #endif // GAMEDEF_H
+
